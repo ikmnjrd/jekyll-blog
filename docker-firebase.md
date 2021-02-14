@@ -89,4 +89,33 @@ services:
 
 `$ firebase init --localhost`
 
+firebase.jsonを編集してpublicをbuildディレクトリを参照するように変更
+
+```firebase.json
+{
+  "hosting": {
+    "public": "build",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/p/*",
+        "function": "funcOGP"
+      },
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  },
+  "database": {
+    "rules": "database.rules.json"
+  }
+}
+
+```
+
 `$ firebase deploy`
