@@ -6,7 +6,8 @@
 
 ## docker-compose.ymlを作成
 
->>>version: "3.8"
+```
+version: "3.8"
 services:
   web:
     build: .
@@ -31,5 +32,6 @@ services:
     
     tty: true
     stdin_open: true
+```
 
 ## test
