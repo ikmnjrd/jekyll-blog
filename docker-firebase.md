@@ -1,13 +1,13 @@
 # DockerとFirebaseで作るReact環境構築
 
-## dockerイメージをダウンロード
+## 都合のいいdockerイメージをダウンロード
 `$ docker pull andreysenov/firebase-tools`
 
 `$ mkdir docker-firebase-test`
 
 参考: [https://hub.docker.com/r/andreysenov/firebase-tools](https://hub.docker.com/r/andreysenov/firebase-tools)
 
-## docker-compose.ymlを作成
+## Docker関連ファイルを作成
 
 `$ vi docker-compose.yml`
 
