@@ -2,7 +2,10 @@
 
 ## dockerイメージをダウンロード
 >$ docker pull andreysenov/firebase-tools
+
 >$ mkdir docker-firebase-test
+
+参考 https://hub.docker.com/r/andreysenov/firebase-tools
 
 ## docker-compose.ymlを作成
 commandは次の手順を実行してから追加
@@ -32,21 +35,26 @@ services:
 ```
 
 >$ vi Dcokerfile
+
 ```
 FROM andreysenov/firebase-tools
 WORKDIR /app
 ```
 
-## 
+## ホスティングするファイルを用意
+今回はReactをcreate-react-appで用意
+
 >$ docker-compose up -d
 
 コンテナに入ってreactをインストール
 >$ docker exec -it docker-firebase-test_web_1 sh
+
 >$ npx create-react-app react-ts-app --template typescript
+
 >$ exit
 
 ## docker-compose.ymlを編集
->$ vi docker-compose.yml
+`$ vi docker-compose.yml`
 
 ```
 version: "3.8"
@@ -74,7 +82,8 @@ services:
 >$ docker-compose up -d
 
 ## firebaseへデプロイ
->$ docker exec -it docker-firebase-test_web_1 sh
->$ cd /app/react-ts-app
->$ firebase init --localhost
->$ firebase deploy
+`$ docker exec -it docker-firebase-test_web_1 sh`
+
+`$ cd /app/react-ts-app`
+`$ firebase init --localhost`
+`$ firebase deploy`
