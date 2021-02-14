@@ -50,7 +50,7 @@ WORKDIR /app
 
 `$ cd /app`
 
-`$ npx create-react-app react-ts-app --template typescript`
+`$ npx create-react-app amongus-tool --template typescript`
 
 `$ exit`
 
@@ -64,7 +64,7 @@ services:
     build: .
     volumes:
       - ./:/app 
-    command: sh -c "cd /app/react-ts-app && yarn start"
+    command: sh -c "cd /app/amongus-tool && yarn start"
     ports:
       - "8000:3000"
       - "4000:4000" #Emulator Suite UI
@@ -87,7 +87,9 @@ services:
 
 `$ cd /app/react-ts-app`
 
-`$ firebase init --localhost`
+`$ firebase login --no-localhost`
+
+`$ firebase init hosting`
 
 firebase.jsonを編集してfirebaseが公開ディレクトリをpublicディレクトリではなく、buildディレクトリを参照するように変更
 
