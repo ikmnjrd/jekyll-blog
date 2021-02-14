@@ -8,7 +8,6 @@
 参考: [https://hub.docker.com/r/andreysenov/firebase-tools](https://hub.docker.com/r/andreysenov/firebase-tools)
 
 ## docker-compose.ymlを作成
-commandは次の手順を実行してから追加
 
 `$ vi docker-compose.yml`
 
@@ -43,10 +42,9 @@ WORKDIR /app
 
 ## ホスティングするファイルを用意
 今回はReactをcreate-react-appで用意
+コンテナに入ってreactをインストール
 
 `$ docker-compose up -d`
-
-コンテナに入ってreactをインストール
 
 `$ docker exec -it docker-firebase-test_web_1 sh`
 
@@ -82,9 +80,9 @@ services:
     stdin_open: true
 ```
 
+## firebaseへデプロイ
 `$ docker-compose up -d`
 
-## firebaseへデプロイ
 `$ docker exec -it docker-firebase-test_web_1 sh`
 
 `$ cd /app/react-ts-app`
