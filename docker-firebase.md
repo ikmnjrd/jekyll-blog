@@ -89,8 +89,9 @@ services:
 
 `$ firebase init --localhost`
 
-firebase.jsonを編集してpublicをbuildディレクトリを参照するように変更
+firebase.jsonを編集してfirebaseが公開ディレクトリをpublicディレクトリではなく、buildディレクトリを参照するように変更
 
+`$ vi firebase.json`
 ```firebase.json
 {
   "hosting": {
