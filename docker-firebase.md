@@ -5,7 +5,7 @@
 
 `$ mkdir docker-firebase-test`
 
-参考 https://hub.docker.com/r/andreysenov/firebase-tools
+参考: [https://hub.docker.com/r/andreysenov/firebase-tools](https://hub.docker.com/r/andreysenov/firebase-tools)
 
 ## docker-compose.ymlを作成
 commandは次の手順を実行してから追加
@@ -47,7 +47,10 @@ WORKDIR /app
 `$ docker-compose up -d`
 
 コンテナに入ってreactをインストール
+
 `$ docker exec -it docker-firebase-test_web_1 sh`
+
+`$ cd /app`
 
 `$ npx create-react-app react-ts-app --template typescript`
 
