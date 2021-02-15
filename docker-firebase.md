@@ -105,17 +105,10 @@ firebase.jsonを編集してfirebaseが公開ディレクトリをpublicディ�
     ],
     "rewrites": [
       {
-        "source": "/p/*",
-        "function": "funcOGP"
-      },
-      {
         "source": "**",
         "destination": "/index.html"
       }
     ]
-  },
-  "database": {
-    "rules": "database.rules.json"
   }
 }
 
