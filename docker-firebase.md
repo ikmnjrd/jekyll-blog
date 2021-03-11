@@ -52,7 +52,7 @@ WORKDIR /app
 
 `$ cd /app`
 
-`$ npx create-react-app amongus-tool --template typescript`
+`$ npx create-react-app sample-app --template typescript`
 
 `$ exit`
 
@@ -66,7 +66,7 @@ services:
     build: .
     volumes:
       - ./:/app 
-    command: sh -c "cd /app/amongus-tool && yarn start"
+    command: sh -c "cd /app/sample-app && yarn start"
     ports:
       - "8000:3000"
       - "4000:4000" #Emulator Suite UI
