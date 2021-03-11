@@ -44,6 +44,8 @@ WORKDIR /app
 今回はReactをcreate-react-appで用意
 コンテナに入ってreactをインストール
 
+`$ docker-compose build`
+
 `$ docker-compose up -d`
 
 `$ docker exec -it docker-firebase-test_web_1 sh`
