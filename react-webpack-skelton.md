@@ -1,4 +1,5 @@
-
+## リポジトリ
+https://github.com/ikmnjrd/react-webpack-skelton
 
 ## 手順
 `# npm init -y`
