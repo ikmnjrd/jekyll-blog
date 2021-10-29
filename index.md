@@ -1,9 +1,7 @@
 ---
-title: Home
+title: ikmnjr-blog
 layout: home
 ---
 
-# ほどほどにブログ
 このブログはGitHub Pagesで管理しています。
-
 ***
