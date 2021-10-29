@@ -1,3 +1,8 @@
+---
+title: reactスケルトン的な
+last_modified_at: 20200401
+---
+
 ## リポジトリ
 https://github.com/ikmnjrd/react-webpack-skelton
 
