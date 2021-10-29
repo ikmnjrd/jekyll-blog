@@ -1,24 +1,29 @@
-remote_theme: jekyll/minima
+author:
+  name: ikeda
+  email: "ikmonjara2rnmt@gmail.com"
 
 lang: ja
 title: ikmnjr-blog
-# 以前使ってたリモートテーマ用
-# cover: /asset/cover-image.webp
+description: > # this means to ignore newlines until "show_excerpts:"
+  GitHub Pagesでブログやってみようと思い至る。
 
-site:
-  author: ikeda
-  email: "ikmonjara2rnmt@gmail.com"
+show_excerpts: false
+
+
 
 # リモートテーマminima特有の設定
 minima:
-  skin: solarized-dark
+  skin: classic
   date_format: "%Y-%m-%d"
   social_links:
     twitter: ikmnjrd
     github: ikmnjrd
   
-header_pages:
-  - about.md
+#header_pages:
+# - about.md
   # - index.md
   
-show_excerpts: true
+
+
+# Build settings
+remote_theme: jekyll/minima
