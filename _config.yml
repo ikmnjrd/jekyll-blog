@@ -21,7 +21,7 @@ header_pages:
   - about.md
   - index.md
   
-google_analytics: ${{ secrets.GTAG_SECRET }}
+google_analytics: G-W6W9YD5G74
 
 # Build settings
 remote_theme: jekyll/minima
