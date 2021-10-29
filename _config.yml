@@ -3,3 +3,5 @@ plugins:
 - jekyll-remote-theme 
 
 title: [the title]
+
+theme: jekyll-theme-dinky
