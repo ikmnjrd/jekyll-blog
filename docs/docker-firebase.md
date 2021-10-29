@@ -1,8 +1,8 @@
 ---
 title: DockerとFirebaseで作るReact環境構築
 layout: post
+last_modified_at: 20200401
 ---
-
 
 ## 都合のいいdockerイメージをダウンロード
 `$ docker pull andreysenov/firebase-tools`

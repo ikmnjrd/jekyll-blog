@@ -1,17 +1,17 @@
 ---
 title: Home
 layhout: home
+description: this is a home.
 ---
 
 ## 目次
-[DockerとFirebaseで作るReact環境構築](https://ikmnjrd.github.io/docker-firebase)
+[DockerとFirebaseで作るReact環境構築](/docs/docker-firebase)
 
-[ReactとTypescriptとWebpack(とnew.css)](https://ikmnjrd.github.io/react-webpack-skelton)
+[ReactとTypescriptとWebpack(とnew.css)](/docs/react-webpack-skelton)
 
-[test](https://ikmnjrd.github.io/test)
+[test](/docs/test)
 
-## その他便利なリンク
+## 適当に参考にしたいリンク集
 [Markdonwn記法 チートシート](https://qiita.com/Qiita/items/c686397e4a0f4f11683d)
 
 ***
-てへ
