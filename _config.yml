@@ -2,4 +2,6 @@ remote_theme: zivong/jekyll-theme-hydure
 
 lang: ja
 title: [ikmnjrd.github.io]
-
+tagline: newbe on the Web
+cover: /asset/cover-image.jpg
+author.name: k.ikeda
