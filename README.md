@@ -5,4 +5,4 @@ GitHub Pages(jekyll)をズボラに利用したブログです。
 
 
 ## 利用しているもの
-* jekyllリモートテーマ https://github.com/zivong/jekyll-theme-hydure
+* jekyllリモートテーマ https://github.com/jekyll/minima

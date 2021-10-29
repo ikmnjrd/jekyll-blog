@@ -1,7 +1,6 @@
 ---
 title: reactスケルトン的な
 layout: post
-last_modified_at: 20200401
 ---
 
 ## リポジトリ
