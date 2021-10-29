@@ -1,7 +1,6 @@
-remote_theme: piharpi/jekyll-klise
+remote_theme: jekyll/minima
 
 lang: ja
 title: ikmnjr-blog
-tagline: newbe on the Web
 cover: /asset/cover-image.webp
 author.name: k.ikeda
