@@ -20,4 +20,4 @@ $ git remote -v
 > origin  git@github.com:USERNAME/REPOSITORY.git (push)
 ```
 
-参考：[公式]: https://docs.github.com/ja/get-started/getting-started-with-git/managing-remote-repositories
+参考：[公式サイト](https://docs.github.com/ja/get-started/getting-started-with-git/managing-remote-repositories)
