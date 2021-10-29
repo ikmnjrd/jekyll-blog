@@ -1,6 +1,5 @@
 author:
-  name: ikeda
-  email: "ikmonjara2rnmt@gmail.com"
+  name: Koichi Ikeda
 
 lang: ja
 title: ikmnjr-blog
@@ -19,10 +18,10 @@ minima:
     twitter: ikmnjrd
     github: ikmnjrd
   
-#header_pages:
-# - about.md
-  # - index.md
-  
+header_pages:
+  - about.md
+  - index.md
+
 
 
 # Build settings

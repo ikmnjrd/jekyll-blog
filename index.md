@@ -1,10 +1,9 @@
 ---
-title: test-home
+title: Home
 layout: home
 ---
 
-## test
-eeeeee
+# ほどほどにブログ
+このブログはGitHub Pagesで管理しています。
 
-### hmhm
-hmmmm
+***

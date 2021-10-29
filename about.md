@@ -1,6 +1,7 @@
 ---
+layout: page
 title: About
-last_modified_at:
+permalink: /about/
 ---
 
 # This is an About Page
