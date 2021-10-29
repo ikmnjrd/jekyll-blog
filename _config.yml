@@ -6,20 +6,19 @@ title: ikmnjr-blog
 # cover: /asset/cover-image.webp
 
 site:
-  author:
-    name: ikeda
-    email: "ikmonjara2rnmt@gmail.com"
+  author: ikeda
+  email: "ikmonjara2rnmt@gmail.com"
 
 # リモートテーマminima特有の設定
 minima:
-  skin: dark
+  skin: solarized
   date_format: "%Y-%m-%d"
   social_links:
     twitter: ikmnjrd
     github: ikmnjrd
   
 header_pages:
-  - about.md
+  - docs/about.md
   - index.md
   
 show_excerpts: true
