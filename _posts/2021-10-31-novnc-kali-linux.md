@@ -2,11 +2,11 @@
 title: kali linuxでVNCサーバーにnovncで接続する
 layout: post
 ---
-公式にやり方も書いてあるがこの通りだとエラーが出た。
-https://www.kali.org/docs/general-use/novnc-kali-in-browser/
+[公式](https://www.kali.org/docs/general-use/novnc-kali-in-browser/)にやり方も書いてあるがこの通りだとエラーが出た。
 
+`$ sudo apt install -y x11vnc`
 
-そのまま実行するとエラーが出る。
+以下の部分をそのまま実行するとエラーが出る。
 $ x11vnc -display :0 -autoport -localhost -nopw -bg -xkb -ncache -ncache_cr-quiet -forever
 ```
 31/10/2021 20:23:07 passing arg to libvncserver: -ncache_cr-quiet
@@ -122,14 +122,12 @@ Usage:
 websockify: error: Error parsing target
 Failed to start WebSockets proxy
 ```
-novnc公式のIssue
-https://github.com/novnc/noVNC/issues/1443
+[novnc公式のIssue](https://github.com/novnc/noVNC/issues/1443)でも似た症状が報告されてた。
 
 
-
-$ cd ~
-$ git clone https://github.com/novnc/noVNC.git
-$ cd noVnc/utils/novnc_proxy --vnc localhost:5900
+`$ cd ~`
+`$ git clone https://github.com/novnc/noVNC.git`
+`$ cd noVnc/utils/novnc_proxy --vnc localhost:5900`
 
 
 
@@ -138,8 +136,8 @@ $ cd noVnc/utils/novnc_proxy --vnc localhost:5900
 
 
 クライアントのターミナルからポートフォワーディング。sshでログインした状態になればOK。
-ssh kali@192.168.0.140 -L 6080:localhost:6080
+`ssh kali@192.168.0.140 -L 6080:localhost:6080`
 
 
-クライアントのWebブラウザで以下のURLにアクセスする
+クライアントのWebブラウザで以下のようにアクセスする。
 http://localhost:6080/vnc.html
