@@ -1,5 +1,5 @@
 ---
-title: homebrewでGCP環境構築
+title: homebrewでGCP~terraformで環境構築
 layout: post
 ---
 
@@ -72,3 +72,44 @@ Some things to try next:
 * Run `gcloud --help` to see the Cloud Platform services you can interact with. And run `gcloud help COMMAND` to get help on any gcloud command.
 * Run `gcloud topic --help` to learn about advanced features of the SDK like arg files and output formatting
 ```
+
+確認コマンド
+`$ gcloud config configurations list` 
+
+リージョンとゾーンが設定されていない
+
+デフォルトで使うリージョン/ゾーンの設定コマンド
+```
+$ gcloud compute project-info add-metadata \
+    --metadata google-compute-default-region=asia-northeast1,google-compute-default-zone=asia-northeast1-c
+```
+
+請求先が見つからないと言われた
+```
+ERROR: (gcloud.compute.project-info.add-metadata) FAILED_PRECONDITION: Billing account for project 'XXXXXXXXXX' is not found. Billing must be enabled for activation of service(s) 'compute.googleapis.com,compute.googleapis.com,compute.googleapis.com' to proceed.
+```
+
+Webコンソールからぽちぽちと請求先を設定。
+
+再び以下のコマンドを実施
+```
+$ gcloud compute project-info add-metadata \
+    --metadata google-compute-default-region=asia-northeast1,google-compute-default-zone=asia-northeast1-c
+```
+
+```
+$ gcloud config configurations list
+```
+
+先ほど作成したプロジェクトではまだリージョン/ゾーンの設定が有効になっていないことが確認できた。
+
+再びぽちぽち。
+```
+$ gcloud init
+```
+
+```
+$ gcloud config configurations list
+```
+
+プロジェクトにリージョン/ゾーンの反映ができた。
