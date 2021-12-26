@@ -1,0 +1,52 @@
+---
+title: GitHub Pages(Jeykyll)をGoogle Search Consoleに登録
+layout: post
+---
+
+## 前提
+私はGitHub Pagesで[Jekyll/minima](https://github.com/jekyll/minima)を利用しているので、同様な構成な方に向けた記事です。
+
+## サイトマップを作成
+jekyllのプラグインを利用してサイトマップを作成するため `_config.yml` に以下を記述。
+```
+plugins:
+- jekyll-sitemap
+```
+
+作成されたサイトマップは以下のURLで確認できる。
+```
+https://{ユーザー名}.github.io/sitemap.xml
+```
+
+
+## gtag(Google analytics)を埋め込む
+Google analyticsを仕込んでいることが前提になっているようなので、事前に設定を済ます。
+
+私のようにGitHub Pagesで[Jekyll/minima](https://github.com/jekyll/minima)を利用している場合
+`_config.yml` に以下のような記述をする。
+```
+google_analytics: G-WXXXXXXXXX
+```
+
+## Google Search Consoleにアクセス
+[https://search.google.com/search-console](https://search.google.com/search-console)にアクセスする。
+</br>
+</br>
+サーチコンソールのロゴ下のメニューをクリックし、開いたメニューの中から「プロパティ追加」をクリック。
+![俯瞰図](https://i.gyazo.com/dce2b95d46361ad38e873d5e5e9e9291.png)
+</br>
+</br>
+URLプレフィックスで自身のページ（`https://{ユーザー名}.github.io`）を入力。続行をクリック。
+![追加画面](https://i.gyazo.com/2d834c38eedd04d1d42663f7dcc4a1c0.png)
+</br>
+</br>
+登録直後の画面
+![登録直後](https://i.gyazo.com/c3ccc8921cac92ce03d4964cc6a78e84.png)
+</br>
+</br>
+
+## 注意
+Google Analyticsタグの埋め込みなどは利用しているJeykllテーマによって異なる場合があります。自身の利用しているリモートテーマをしっかりと確認しましょう。
+
+### 参考文献
+- [https://netchira.github.io/blog/githubpages/SEOsono1.html](https://netchira.github.io/blog/githubpages/SEOsono1.html)

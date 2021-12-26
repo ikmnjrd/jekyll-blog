@@ -16,11 +16,11 @@ minima:
   social_links:
     twitter: ikmnjrd
     github: ikmnjrd
-  
+
 header_pages:
   - about.md
   - index.md
-  
+
 google_analytics: G-W6W9YD5G74
 
 # Build settings
@@ -28,3 +28,4 @@ remote_theme: jekyll/minima
 
 plugins:
   - jekyll-remote-theme
+  - jekyll-sitemap
