@@ -30,18 +30,25 @@ google_analytics: G-WXXXXXXXXX
 
 ## Google Search Consoleにアクセス
 [https://search.google.com/search-console](https://search.google.com/search-console)にアクセスする。
+
 </br>
 </br>
+
 サーチコンソールのロゴ下のメニューをクリックし、開いたメニューの中から「プロパティ追加」をクリック。
 ![俯瞰図](https://i.gyazo.com/dce2b95d46361ad38e873d5e5e9e9291.png)
+
 </br>
 </br>
+
 URLプレフィックスで自身のページ（`https://{ユーザー名}.github.io`）を入力。続行をクリック。
 ![追加画面](https://i.gyazo.com/2d834c38eedd04d1d42663f7dcc4a1c0.png)
+
 </br>
 </br>
+
 登録直後の画面
 ![登録直後](https://i.gyazo.com/c3ccc8921cac92ce03d4964cc6a78e84.png)
+
 </br>
 </br>
 
@@ -50,3 +57,4 @@ Google Analyticsタグの埋め込みなどは利用しているJeykllテーマ�
 
 ### 参考文献
 - [https://netchira.github.io/blog/githubpages/SEOsono1.html](https://netchira.github.io/blog/githubpages/SEOsono1.html)
+- [https://developers.google.com/search/docs/beginner/seo-starter-guide](https://developers.google.com/search/docs/beginner/seo-starter-guide)
