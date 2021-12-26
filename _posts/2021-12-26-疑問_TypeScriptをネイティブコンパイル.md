@@ -1,5 +1,5 @@
 ---
-title: [疑問メモ]wasmとV8エンジン
+title: 疑問メモ_wasmとV8エンジン
 layout: post
 ---
 

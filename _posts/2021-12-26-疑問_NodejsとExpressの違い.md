@@ -1,5 +1,5 @@
 ---
-title: [疑問メモ]NodejsとExpressの違い
+title: 疑問メモ_NodejsとExpressの違い
 layout: post
 ---
 
