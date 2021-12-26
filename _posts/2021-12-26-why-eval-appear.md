@@ -1,5 +1,5 @@
 ---
-title: [疑問メモ]evalが頻出するのはなぜ
+title: 疑問メモ:evalが頻出するのはなぜ
 layout: post
 ---
 
