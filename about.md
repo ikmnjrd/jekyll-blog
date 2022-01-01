@@ -5,8 +5,8 @@ permalink: /about
 ---
 
 <div style="display: flex">
-  <h1 style="display: inline-block">I'm in a Web.<h1>
-  <img src="./icon-32x32.png" style="border-radius: 16px"/>
+  <h1 style="display: inline-block">I'm in a Web.</h1>
+  <img src="./icon-32x32.png" style="height: 3rem; border-radius: 16px"/>
 </div>
 
 ### Likes
