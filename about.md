@@ -4,10 +4,10 @@ title: About
 permalink: /about
 ---
 
-# I'm a newbe on the Web.
-
-![icon-96x96.png](./icon-96x96.png)
-<img src="./icon-96x96.png" style="border-radius: 48px"/>
+<div style="display: flex">
+  <h1 style="display: inline-block">I'm in a Web.<h1>
+  <img src="./icon-32x32.png" style="border-radius: 16px"/>
+</div>
 
 ### Likes
 <details>
