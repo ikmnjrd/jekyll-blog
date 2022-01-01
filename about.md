@@ -6,16 +6,19 @@ permalink: /about
 
 # I'm a newbe on the Web.
 
+![icon-96x96.png](./icon-96x96.png)
+<img src="./icon-96x96.png" style="border-radius: 48px"/>
+
 ### Likes
 <details>
   <summary>Web</summary>
-  Webブラウザが特に好き。<br>
-  万人にとっての使いやすさの実現に興味があり、アクセシビリティやパフォーマンスといった分野への興味が強め。
+  PlayStationよりも、サーバーよりもWebブラウザが好き。<br>
+  使いやすさの顕現に興味があり、アクセシビリティやパフォーマンスといった分野への興味が特に強め。
 </details>
 
 <details>
   <summary>Pokémon</summary>
-  一時期HSHG〜BW2時代に廃人化していた。<br>
+  HSHG〜BW2時代に廃人化していた。<br>
   今はエンジョイ勢。<br>
 </details>
 
