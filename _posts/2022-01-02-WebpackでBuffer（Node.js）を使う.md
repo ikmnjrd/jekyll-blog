@@ -1,5 +1,5 @@
 ---
-title: WggebpackでBuffer（Node.js）を使う
+title: WebpackでBuffer（Node.js）を使う
 layout: post
 ---
 
