@@ -1,9 +1,9 @@
 ---
-title: Cloud Runで動かすアプリをRDBに接続した際の料金を考える
+title: Google Cloud Runで動かすアプリをRDBに接続した際の料金を考える
 layout: post
 ---
 
-Cloud Runは便利ですよね。私は普段Reactでクライアント側を触っていてFirebaseで済ませることが多いのですが、Cloud Runの便利さに感化されてRDBも使いたくなりました。（FirebaseはNoSQLしか提供してくれていないので...）
+Googleが提供してくれているCloud Runは便利ですよね。私は普段Reactでクライアント側を触っていてFirebaseで済ませることが多いのですが、Cloud Runの便利さに感化されてRDBも使いたくなりました。（FirebaseはNoSQLしか提供してくれていないので...）
 
 しかしへっぽこアプリに使うにはいかんせん料金が気になったところで、予想よりも今回の用途には高級すぎました。今回の判断の元になった部分をまとめます。
 
@@ -14,13 +14,18 @@ Cloud Runは便利ですよね。私は普段Reactでクライアント側を触
 1. Cloud Run と Cloud SQL
 2. Cloud RunにホストしたAPIサーバーをVPS上のDBサーバーに繋ぐ
 
-今回は結局、別の方法を取ることにしましたがその第3の方法についてはブログ内で次の記事にします。
+今回は結局、別の方法を取ることにしましたが、その第3の方法についてはブログ内で次の記事にします。
+
+
 
 ### 注意事項
 1$=100円で計算しています。
 
-## **Cloud SQLの料金**
-起動時間あたりの従量課金。1ヶ月
+料金は全て東京リージョンで計算しています。
+
+
+## **1. Cloud SQLの料金**
+1ヶ月あたり800円。
 
 #### 内訳
 1. ストレージとネットワークの料金
@@ -42,15 +47,15 @@ Cloud Runは便利ですよね。私は普段Reactでクライアント側を触
 CloudFunctionsで停止と起動をスケジューリングしてことを解説している[Google Cloudのブログ](https://cloud.google.com/blog/ja/topics/developers-practitioners/lower-development-costs-schedule-cloud-sql-instances-start-and-stop)もあります。
 
 
-## **他社VPSにDBサーバを建て接続**
+## **2. 他社VPSにDBサーバを建て接続**
 必要なもの(料金計算対象)
 * VPS(今回はConoHa)
 * Cloud NAT
-* 
+* 静的IPアドレス
 
 
 ### **ConoHaのVPSの料金**
-月682円
+1ヶ月あたり682円
 
 メモリ: 512MB、
 CPU: 1コア、
@@ -58,8 +63,7 @@ SSD: 30GB
 
 
 ### **Cloud NATの料金**
-
-
+1ヶ月あたり数円
 
 | 割り当てられている VM インスタンスの数 | 1 時間あたりの料金 | 処理された 1 GB あたりの料金（下りと上り（外向きと内向き）の両方） |
 |:-----------|:------------|:------------|
@@ -69,7 +73,12 @@ SSD: 30GB
 参考：[https://cloud.google.com/nat/pricing?hl=ja](https://cloud.google.com/nat/pricing?hl=ja)
 
 
+### **静的IPアドレス**
+1ヶ月あたり1,080円
 
+静的IPアドレス（割り当て済み、未使用）	1時間あたり$0.015
+
+参考:[https://cloud.google.com/compute/all-pricing#ipaddress](https://cloud.google.com/compute/all-pricing#ipaddress)
 
 
 ### その他参考
