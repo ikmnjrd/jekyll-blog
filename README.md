@@ -20,3 +20,14 @@ GitHub Pages(jekyll)をズボラに利用したブログです。
 1. gyazoでスクリーショットを撮影。自動的にブラウザが開く
 2. アドレスバーの`https://gyazo.com/XXXX`をコピー
 3. `https://i.gyazo.com/XXXX.png`を記事中に指定
+
+### 記事のfront matter
+以下のようにカテゴリーを設定する場合はtech、もしくはideaを設定する。
+Zennに移行しやすいように合わせている。[参考](https://zenn.dev/tech-or-idea)
+```
+---
+title: Macでオンライン会議を文字起こし
+layout: post
+categories: tech | idea
+---
+```

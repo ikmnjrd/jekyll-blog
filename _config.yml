@@ -7,7 +7,7 @@ description: > # this means to ignore newlines until "show_excerpts:"
   GitHub Pagesでブログやってみようと思い至る。
 
 paginate: 10
-paginate_path: "/page/:num/"
+paginate_path: posts/page:num/
 
 # リモートテーマminima特有の設定
 show_excerpts: false
