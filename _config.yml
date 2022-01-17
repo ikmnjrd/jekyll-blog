@@ -21,6 +21,8 @@ header_pages:
   - about.md
   - index.md
 
+paginate: true
+
 google_analytics: G-W6W9YD5G74
 
 # Build settings
