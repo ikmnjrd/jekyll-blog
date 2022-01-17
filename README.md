@@ -5,7 +5,8 @@ GitHub Pages(jekyll)をズボラに利用したブログです。
 
 
 ## 利用しているもの
-* jekyllリモートテーマ https://github.com/jekyll/minima
+* jekyllリモートテーマ[minima](https://github.com/jekyll/minima)
+* [Jekyll Tipue Search](https://github.com/jekylltools/jekyll-tipue-search)
 
 
 ## 運用
