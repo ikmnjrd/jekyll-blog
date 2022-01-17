@@ -19,6 +19,7 @@ minima:
 header_pages:
   - about.md
   - index.md
+  - search.md
 
 google_analytics: G-W6W9YD5G74
 
