@@ -30,9 +30,3 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-seo-tag
-
-gems:
-  - jekyll-paginate
-
-paginate: 10
-paginate_path: posts/page:num/
