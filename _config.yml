@@ -6,6 +6,8 @@ title: ikmnjr-blog
 description: > # this means to ignore newlines until "show_excerpts:"
   GitHub Pagesでブログやってみようと思い至る。
 
+paginate: 10
+paginate_path: "/page/:num/"
 
 # リモートテーマminima特有の設定
 show_excerpts: false
@@ -21,8 +23,6 @@ header_pages:
   - about.md
   - index.md
 
-paginate: 10
-
 google_analytics: G-W6W9YD5G74
 
 # Build settings
@@ -33,4 +33,4 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-paginate
+  # - jekyll-paginate
