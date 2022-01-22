@@ -29,6 +29,5 @@ Zennに移行しやすいように合わせている。[参考](https://zenn.dev
 ---
 title: Macでオンライン会議を文字起こし
 layout: post
-categories: tech | idea
 ---
 ```
