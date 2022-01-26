@@ -32,11 +32,14 @@
 }
 
 /*
-* ブログ記事タイトルのリンク
+* ブログ記事一覧画面
 */
+.page-heading {
+  color: #555;
+}
 .post-link {
-  color: #444;
+  color: #666;
 }
 .post-link:visited {
-  color: #777;
+  color: #888;
 }
