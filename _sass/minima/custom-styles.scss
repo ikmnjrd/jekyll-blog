@@ -15,7 +15,7 @@
   padding: 7.5px;
   border: 1px solid #e8e8e8;
   border-radius: 10px;
-  box-shadow: inset 0px 0px 5px 0px #999;
+  box-shadow: inset 2px 2px 5px 0px #999;
 }
 
 /*
@@ -29,4 +29,11 @@
   color: #666;
   text-shadow: 1px 1px 2px #666;
   text-align: right;
+}
+
+/*
+* ブログ記事タイトルのリンク
+*/
+.post-link {
+  color: #444
 }
