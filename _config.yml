@@ -21,6 +21,9 @@ header_pages:
   - index.md
   - search.md
 
+# test
+paginate: true
+
 google_analytics: G-W6W9YD5G74
 
 # Build settings
