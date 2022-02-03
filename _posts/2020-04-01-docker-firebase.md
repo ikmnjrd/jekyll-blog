@@ -14,7 +14,7 @@ layout: post
 
 `$ vi docker-compose.yml`
 
-```
+```yml
 version: "3.8"
 services:
   web:
@@ -38,7 +38,7 @@ services:
 
 `$ vi Dcokerfile`
 
-```
+```docker
 FROM andreysenov/firebase-tools
 WORKDIR /app
 ```
@@ -62,7 +62,7 @@ WORKDIR /app
 ## docker-compose.ymlを編集
 `$ vi docker-compose.yml`
 
-```
+```yml
 version: "3.8"
 services:
   web:
@@ -99,7 +99,7 @@ services:
 firebase.jsonを編集してfirebaseが公開ディレクトリをpublicディレクトリではなく、buildディレクトリを参照するように変更
 
 `$ vi firebase.json`
-```firebase.json
+```json
 {
   "hosting": {
     "public": "build",

@@ -8,15 +8,14 @@ layout: post
 
 ## サイトマップを作成
 jekyllのプラグインを利用してサイトマップを作成するため `_config.yml` に以下を記述。
-```
+```yml
 plugins:
 - jekyll-sitemap
 ```
 
 作成されたサイトマップは以下のURLで確認できる。
-```
-https://{ユーザー名}.github.io/sitemap.xml
-```
+
+`https://{ユーザー名}.github.io/sitemap.xml`
 
 
 ## gtag(Google analytics)を埋め込む
@@ -24,7 +23,7 @@ Google analyticsを仕込んでいることが前提になっているような�
 
 私のようにGitHub Pagesで[Jekyll/minima](https://github.com/jekyll/minima)を利用している場合
 `_config.yml` に以下のような記述をする。
-```
+```yml
 google_analytics: G-WXXXXXXXXX
 ```
 

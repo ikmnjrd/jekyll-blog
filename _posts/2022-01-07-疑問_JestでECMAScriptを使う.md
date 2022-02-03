@@ -10,7 +10,7 @@ JestでECMAScriptを使う方法が[公式](https://jestjs.io/ja/docs/ecmascript
 公式通りにやってみた結果以下のエラー。
 
 ### エラー全文
-```
+```bash
 % node --experimental-vm-modules node_modules/jest/bin/jest.js
 (node:92238) ExperimentalWarning: VM Modules is an experimental feature. This feature could change at any time
 (Use `node --trace-warnings ...` to show where the warning was created)

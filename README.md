@@ -25,7 +25,7 @@ GitHub Pages(jekyll)をズボラに利用したブログです。
 ### 記事のfront matter
 以下のようにカテゴリーを設定する場合はtech、もしくはideaを設定する。
 Zennに移行しやすいように合わせている。[参考](https://zenn.dev/tech-or-idea)
-```
+```yml
 ---
 title: Macでオンライン会議を文字起こし
 layout: post

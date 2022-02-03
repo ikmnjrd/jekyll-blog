@@ -12,7 +12,7 @@ https://github.com/ikmnjrd/react-webpack-skelton
 `# npm i -D webpack webpack-cli webpack-dev-server typescript ts-loader`
 
 package.jsonに追記
-```
+```json
 "build": "webpack",
 "watch": "webpack -w",
 "start": "webpack serve"
@@ -21,7 +21,7 @@ package.jsonに追記
 `# npm i -S react react-dom react-router-dom @types/react @types/react-dom @types/react-router-dom`
 
 tsconfig.json作成
-```
+```json
 {
   "compilerOptions": {
     "sourceMap": true,

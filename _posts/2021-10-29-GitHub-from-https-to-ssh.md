@@ -3,7 +3,7 @@ title: GitHubのhttpsからSSH通信への切り替え
 layout: post
 ---
 
-```
+```bash
 $ git remote -v
 ターミナルを開いてください。
 ワーキングディレクトリをローカルプロジェクトに変更します。

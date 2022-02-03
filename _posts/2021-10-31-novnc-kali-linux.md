@@ -8,7 +8,7 @@ layout: post
 
 以下の部分をそのまま実行するとエラーが出る。
 $ x11vnc -display :0 -autoport -localhost -nopw -bg -xkb -ncache -ncache_cr-quiet -forever
-```
+```bash
 31/10/2021 20:23:07 passing arg to libvncserver: -ncache_cr-quiet
 31/10/2021 20:23:07 x11vnc version: 0.9.16 lastmod: 2019-01-05  pid: 2173
 31/10/2021 20:23:07 Using X display :0
@@ -100,7 +100,7 @@ $ x11vnc -display :0 -autoport -localhost -nopw -bg -xkb -ncache -forever
 
 `$ ss -antp | grep vnc`
 
-```
+```bash
 LISTEN    0         32                127.0.0.1:5900            0.0.0.0:*        users:(("x11vnc",pid=8056,fd=8))
 LISTEN    0         32                    [::1]:5900               [::]:*        users:(("x11vnc",pid=8056,fd=9))
 kali@kali:~$
@@ -111,7 +111,7 @@ kali@kali:~$
 
 ここでもエラーが出る。
 $ /usr/share/novnc/utils/launch.sh --listen 8081 --vnc localhost
-```
+```bash
 Warning: could not find self.pem
 Using installed websockify at /usr/bin/websockify
 Starting webserver and WebSockets proxy on port 8081
